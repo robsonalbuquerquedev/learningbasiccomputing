@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "O que é um Computador?",
-  description: "O computador é como uma pessoa: cada parte tem uma função.",
+  title: "Learning Basic Computing",
+  description: "Um jeito divertido e simples de aprender informática! Descubra como os computadores funcionam e explore conteúdos criados especialmente para crianças.",
 };
 
 export default function RootLayout({
