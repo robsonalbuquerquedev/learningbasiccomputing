@@ -44,12 +44,12 @@ export default function HistoriaComputadorMaterial() {
                 📜 História do Computador
             </h1>
 
-            <p className="text-lg md:text-xl text-center max-w-3xl text-blue-800 mb-12 hidden md:block">
+            <p className="text-lg lg:text-xl text-center max-w-3xl text-blue-800 mb-12 hidden lg:block">
                 Vamos conhecer como os computadores surgiram e evoluíram ao longo do tempo!
                 Passe o mouse sobre cada geração para mais detalhes.
             </p>
 
-            <p className="text-lg text-center max-w-3xl text-blue-800 mb-12 md:hidden">
+            <p className="text-lg text-center max-w-3xl text-blue-800 mb-12 lg:hidden">
                 Vamos conhecer como os computadores surgiram e evoluíram ao longo do tempo!
             </p>
             
