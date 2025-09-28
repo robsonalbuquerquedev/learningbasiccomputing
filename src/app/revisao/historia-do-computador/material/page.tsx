@@ -44,10 +44,15 @@ export default function HistoriaComputadorMaterial() {
                 📜 História do Computador
             </h1>
 
-            <p className="text-lg md:text-xl text-center max-w-3xl text-blue-800 mb-12">
-                Vamos conhecer como os computadores surgiram e evoluíram ao longo do tempo! Passe o mouse sobre cada geração para mais detalhes.
+            <p className="text-lg md:text-xl text-center max-w-3xl text-blue-800 mb-12 hidden md:block">
+                Vamos conhecer como os computadores surgiram e evoluíram ao longo do tempo!
+                Passe o mouse sobre cada geração para mais detalhes.
             </p>
 
+            <p className="text-lg text-center max-w-3xl text-blue-800 mb-12 md:hidden">
+                Vamos conhecer como os computadores surgiram e evoluíram ao longo do tempo!
+            </p>
+            
             {/* TIMELINE INTERATIVA */}
             <section className="relative w-full max-w-5xl">
                 <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-blue-300" />
