@@ -3,11 +3,12 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaLaptop, FaNetworkWired, FaRobot } from "react-icons/fa";
+import { FaLaptop, FaNetworkWired, FaRobot, FaAppStore } from "react-icons/fa";
 
 const newTopics = [
     { name: "Computador", slug: "computer", icon: <FaLaptop className="text-white w-8 h-8" />, color: "bg-blue-500" },
     { name: "Internet", slug: "internet", icon: <FaNetworkWired className="text-white w-8 h-8" />, color: "bg-purple-500" },
+    { name: "Aplicações", slug: "aplicacoes", icon: <FaAppStore className="text-white w-8 h-8" />, color: "bg-yellow-500" },
     { name: "Redes", slug: "redes", icon: <FaNetworkWired className="text-white w-8 h-8" />, color: "bg-green-500" },
     { name: "Inteligência Artificial", slug: "inteligencia-artificial", icon: <FaRobot className="text-white w-8 h-8" />, color: "bg-pink-500" },
 ];
