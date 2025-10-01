@@ -80,7 +80,12 @@ export default function Aplicacoes() {
                     das instruções fornecidas pelo software. <strong>Ou seja, um depende do outro!</strong>
                 </p>
                 <div className="mt-4">
-                    <Link href="/computer" className="text-blue-500 underline">
+                    <Link
+                        href="/computer"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 underline"
+                    >
                         Saiba mais sobre hardware clicando aqui!
                     </Link>
                 </div>
@@ -125,19 +130,25 @@ export default function Aplicacoes() {
             {/* Exemplos de Softwares */}
             <section className="grid gap-6 md:grid-cols-2">
                 {/* Editor de Texto */}
-                <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    className="p-4 bg-white rounded-xl shadow-md flex items-center gap-4"
+                <Link
+                    href="/revisao/word/material"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    <FaFileWord className="text-blue-600 text-4xl" />
-                    <div>
-                        <h2 className="font-semibold text-lg">Editor de Texto</h2>
-                        <p className="text-gray-600 text-sm">
-                            Usado para escrever trabalhos, histórias ou até bilhetes.
-                            Exemplos: Word, Google Docs.
-                        </p>
-                    </div>
-                </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        className="p-4 bg-white rounded-xl shadow-md flex items-center gap-4 cursor-pointer"
+                    >
+                        <FaFileWord className="text-blue-600 text-4xl" />
+                        <div>
+                            <h2 className="font-semibold text-lg">Editor de Texto</h2>
+                            <p className="text-gray-600 text-sm">
+                                Usado para escrever trabalhos, histórias ou até bilhetes.
+                                Exemplos: Word, Google Docs.
+                            </p>
+                        </div>
+                    </motion.div>
+                </Link>
 
                 {/* Navegador */}
                 <motion.div
