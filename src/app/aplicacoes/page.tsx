@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import {
-    FaFileWord, FaChrome, FaGamepad, FaEnvelope, FaYoutube,
+    FaFileWord, FaChrome, FaGamepad, FaEnvelope,
     FaLaptop, FaNetworkWired, FaRobot, FaTable, FaRegImages
 } from "react-icons/fa";
 import Link from "next/link";

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import {
-    FaGlobe, FaComments, FaGamepad, FaShieldAlt, FaHistory,
+    FaGlobe, FaShieldAlt, FaHistory,
     FaServer, FaNetworkWired, FaChrome
 } from "react-icons/fa";
 
