@@ -41,8 +41,7 @@ export default function WordMaterial() {
             >
                 O Microsoft Word é um dos editores de texto mais utilizados no mundo.
                 Ele nos ajuda a escrever trabalhos, relatórios, histórias e até bilhetes.
-                Mas o que muita gente não sabe é que o Word possui <span className="font-semibold">atalhos e truques secretos</span>
-                que tornam nosso dia a dia mais fácil e rápido. Vamos descobrir alguns deles!
+                Mas o que muita gente não sabe é que o Word possui <span className="font-semibold">atalhos e truques secretos</span> que tornam nosso dia a dia mais fácil e rápido. Vamos descobrir alguns deles!
             </motion.p>
 
             {/* Lista de Dicas */}
@@ -59,8 +58,7 @@ export default function WordMaterial() {
                 <li>
                     <span className="font-semibold">Aumentar ou diminuir letras:</span>{" "}
                     <kbd>Ctrl</kbd> + <kbd>[</kbd> (diminuir) ou <kbd>Ctrl</kbd> + <kbd>]</kbd> (aumentar).
-                    Outra forma: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&gt;</kbd> (aumentar) ou
-                    <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&lt;</kbd> (diminuir).
+                    Outra forma: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&gt;</kbd> (aumentar) ou <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&lt;</kbd> (diminuir).
                 </li>
                 <li>
                     <span className="font-semibold">Limpar a formatação:</span>{" "}
@@ -87,6 +85,33 @@ export default function WordMaterial() {
                     <span className="font-semibold">Adicionar fórmulas:</span>{" "}
                     vá em <span className="italic">Inserir &gt; Equação</span> ou use{" "}
                     <span className="italic">Equação à Tinta</span>.
+                </li>
+                <li>
+                    <span className="font-semibold">Salvar documento:</span>{" "}
+                    pressione <span className="italic">Ctrl + B</span> (versão em português) ou{" "}
+                    <span className="italic">Ctrl + S</span> (versão em inglês).
+                </li>
+                <li>
+                    <span className="font-semibold">Desfazer ação:</span>{" "}
+                    pressione <span className="italic">Ctrl + Z</span> (funciona tanto em português quanto em inglês).
+                </li>
+
+                <li>
+                    <span className="font-semibold">Refazer ação:</span>{" "}
+                    pressione <span className="italic">Ctrl + R</span> (versão em português) ou{" "}
+                    <span className="italic">Ctrl + Y</span> (versão em inglês).
+                </li>
+                <li>
+                    <span className="font-semibold">Diga-me o que fazer:</span>{" "}
+                    pressione <span className="italic">Alt + G</span> para ativar a barra de pesquisa{" "}
+                    <span className="italic">"Diga-me o que você deseja fazer"</span> no Word.
+                </li>
+                <li>
+                    <span className="font-semibold">Navegar pela Faixa de Opções:</span>{" "}
+                    pressione apenas <span className="italic">Alt</span> e o Word exibirá letras e números
+                    sobre cada guia/comando da <span className="italic">Ribbon</span>. Em seguida,
+                    pressione a letra correspondente para acessar a guia ou comando desejado,
+                    sem precisar do mouse.
                 </li>
             </motion.ol>
 
