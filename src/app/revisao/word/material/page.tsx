@@ -104,7 +104,7 @@ export default function WordMaterial() {
                 <li>
                     <span className="font-semibold">Diga-me o que fazer:</span>{" "}
                     pressione <span className="italic">Alt + G</span> para ativar a barra de pesquisa{" "}
-                    <span className="italic">"Diga-me o que você deseja fazer"</span> no Word.
+                    <span className="italic">&quot;Diga-me o que você deseja fazer&quot;</span> no Word.
                 </li>
                 <li>
                     <span className="font-semibold">Navegar pela Faixa de Opções:</span>{" "}
