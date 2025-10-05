@@ -195,19 +195,25 @@ export default function Aplicacoes() {
                 </motion.div>
 
                 {/* Jogos Educativos */}
-                <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    className="p-4 bg-white rounded-xl shadow-md flex items-center gap-4"
+                <Link
+                    href="/revisao/games-informatica/material"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    <FaGamepad className="text-purple-600 text-4xl" />
-                    <div>
-                        <h2 className="font-semibold text-lg">Jogos Educativos</h2>
-                        <p className="text-gray-600 text-sm">
-                            Aprender se divertindo! Existem jogos que ensinam matemática, inglês e lógica.
-                        </p>
-                    </div>
-                </motion.div>
-
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        className="p-4 bg-white rounded-xl shadow-md flex items-center gap-4 cursor-pointer"
+                    >
+                        <FaGamepad className="text-purple-600 text-4xl" />
+                        <div>
+                            <h2 className="font-semibold text-lg">Jogos Educativos</h2>
+                            <p className="text-gray-600 text-sm">
+                                Aprender se divertindo! Existem jogos que ensinam matemática, inglês e lógica.
+                            </p>
+                        </div>
+                    </motion.div>
+                </Link>
+                
                 {/* E-mail */}
                 <motion.div
                     whileHover={{ scale: 1.05 }}
