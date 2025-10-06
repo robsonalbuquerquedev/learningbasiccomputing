@@ -113,6 +113,33 @@ export default function WordMaterial() {
                     pressione a letra correspondente para acessar a guia ou comando desejado,
                     sem precisar do mouse.
                 </li>
+                <li>
+                    <span className="font-semibold">Selecionar texto no Word:</span>{" "}
+                    Existem várias maneiras de selecionar o texto:
+                    <ul className="list-disc pl-6 mt-2 text-gray-700">
+                        <li>A forma mais comum: use o mouse, posicione no início do texto, segure o botão e arraste até o final.</li>
+                        <li>Selecionar uma linha inteira: mova o mouse um pouco para a esquerda até que ele vire uma seta e clique — a linha inteira será selecionada.</li>
+                        <li>Selecionar um parágrafo inteiro: clique três vezes no meio do parágrafo.</li>
+                        <li>Selecionar frases específicas: clique no meio da frase, segure <kbd>Ctrl</kbd> e clique novamente.</li>
+                        <li>Quando há uma imagem, selecione o texto segurando <kbd>Alt</kbd> + mouse, assim o texto será selecionado sem que a imagem atrapalhe.</li>
+                    </ul>
+                </li>
+                <li>
+                    <span className="font-semibold">Formatar texto com atalhos:</span>{" "}
+                    Use os seguintes atalhos para aplicar formatações rapidamente:
+                    <ul className="list-disc pl-6 mt-2 text-gray-700">
+                        <li><kbd>Ctrl + N</kbd> (ou <kbd>Ctrl + B</kbd> na versão em inglês) → Negrito</li>
+                        <li><kbd>Ctrl + I</kbd> → Itálico</li>
+                        <li><kbd>Ctrl + S</kbd> (ou <kbd>Ctrl + U</kbd> na versão em inglês) → Sublinhado</li>
+                        <li><kbd>Ctrl + Shift + =</kbd> → Sobrescrito</li>
+                        <li><kbd>Ctrl + =</kbd> → Subscrito</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span className="font-semibold">Copiar formatação:</span>{" "}
+                    Use o <span className="italic">Pincel de Formatação</span> para copiar o estilo de um texto e aplicar em outro. É rápido e evita refazer toda a formatação manualmente.
+                </li>
             </motion.ol>
 
             {/* Conclusão */}
