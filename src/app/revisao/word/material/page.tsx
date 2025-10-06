@@ -125,6 +125,10 @@ export default function WordMaterial() {
                     </ul>
                 </li>
                 <li>
+                    <span className="font-semibold">Selecionar todo o texto:</span>{" "}
+                    pressione <kbd>Ctrl + T</kbd> (ou <kbd>Ctrl + A</kbd> na versão em inglês) para selecionar rapidamente todo o conteúdo do documento.
+                </li>
+                <li>
                     <span className="font-semibold">Formatar texto com atalhos:</span>{" "}
                     Use os seguintes atalhos para aplicar formatações rapidamente:
                     <ul className="list-disc pl-6 mt-2 text-gray-700">
