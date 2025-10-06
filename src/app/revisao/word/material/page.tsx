@@ -144,6 +144,16 @@ export default function WordMaterial() {
                     <span className="font-semibold">Copiar formatação:</span>{" "}
                     Use o <span className="italic">Pincel de Formatação</span> para copiar o estilo de um texto e aplicar em outro. É rápido e evita refazer toda a formatação manualmente.
                 </li>
+                <li>
+                    <span className="font-semibold">Mostrar tudo:</span>{" "}
+                    pressione <span className="italic">Ctrl + Shift + 8</span> para exibir os símbolos de parágrafo, espaços e quebras ocultas.
+                    Isso ajuda a visualizar a estrutura do texto e corrigir formatações indesejadas.
+                </li>
+
+                <li>
+                    <span className="font-semibold">Quebra de página:</span>{" "}
+                    use <span className="italic">Ctrl + Enter</span> para inserir uma nova página rapidamente, sem precisar pressionar várias vezes a tecla Enter.
+                </li>
             </motion.ol>
 
             {/* Conclusão */}
