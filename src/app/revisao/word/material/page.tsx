@@ -154,6 +154,11 @@ export default function WordMaterial() {
                     <span className="font-semibold">Quebra de página:</span>{" "}
                     use <span className="italic">Ctrl + Enter</span> para inserir uma nova página rapidamente, sem precisar pressionar várias vezes a tecla Enter.
                 </li>
+                <li>
+                    <span className="font-semibold">Criar nota de rodapé:</span>{" "}
+                    pressione <span className="italic">Ctrl + Alt + F</span> para adicionar uma nota de rodapé no documento.
+                    Ela aparece no final da página e serve para incluir explicações, referências ou observações sem poluir o texto principal.
+                </li>
             </motion.ol>
 
             {/* Conclusão */}
