@@ -154,6 +154,17 @@ export default function GamesInformaticaAtividade() {
                                 Acessar
                             </Link>
                         </li>
+                        <li>
+                            🧩 <strong>DigiPuzzle</strong> – Jogos educativos para treinar matemática, lógica, geografia e muito mais.{" "}
+                            <Link
+                                href="https://www.digipuzzle.net/pt/jogoseducativos/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 underline"
+                            >
+                                Acessar
+                            </Link>
+                        </li>
                     </ul>
                 </motion.div>
 
