@@ -159,6 +159,24 @@ export default function WordMaterial() {
                     pressione <span className="italic">Ctrl + Alt + F</span> para adicionar uma nota de rodapé no documento.
                     Ela aparece no final da página e serve para incluir explicações, referências ou observações sem poluir o texto principal.
                 </li>
+                <li>
+                    <span className="font-semibold">Criar nota de rodapé:</span>{" "}
+                    pressione <span className="italic">Ctrl + Alt + F</span> para adicionar uma nota de rodapé no documento.
+                    Ela aparece no final da página e serve para incluir explicações, referências ou observações sem poluir o texto principal.
+                </li>
+
+                <li>
+                    <span className="font-semibold">Criar nota de fim:</span>{" "}
+                    pressione <span className="italic">Ctrl + Alt + D</span> para adicionar uma nota de fim no documento.
+                    Diferente da nota de rodapé, ela é exibida apenas ao final do texto, geralmente em relatórios ou trabalhos acadêmicos.
+                </li>
+
+                <li>
+                    <span className="font-semibold">Aumentar e diminuir recuo:</span>{" "}
+                    pressione <span className="italic">Tab</span> para aumentar o recuo do parágrafo ou{" "}
+                    <span className="italic">Shift + Tab</span> para diminuir.
+                    Essa técnica ajuda a organizar listas, citações e textos hierarquizados com mais clareza.
+                </li>
             </motion.ol>
 
             {/* Conclusão */}
