@@ -121,8 +121,8 @@ export default function PowerPointMaterial() {
                 <p>
                     Assim como no Word, o PowerPoint tem a{" "}
                     <strong>Faixa de Opções (Ribbon)</strong>, onde ficam todas as
-                    ferramentas — como a aba <strong>"Página Inicial"</strong> e{" "}
-                    <strong>"Inserir"</strong>. Cada <strong>slide</strong> é uma nova
+                    ferramentas &mdash; como a aba <strong>&quot;Página Inicial&quot;</strong> e{" "}
+                    <strong>&quot;Inserir&quot;</strong>. Cada <strong>slide</strong> é uma nova
                     página da sua história!
                 </p>
                 <p className="mt-3 text-gray-600">
