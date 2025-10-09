@@ -6,6 +6,7 @@ import {
     FaCloud,
     FaUsers,
     FaMagic,
+    FaKeyboard,
 } from "react-icons/fa";
 import Link from "next/link";
 
@@ -130,6 +131,116 @@ export default function PowerPointMaterial() {
                     tudo no seu estilo. 😉
                 </p>
             </motion.div>
+
+            {/* Dicas e atalhos úteis */}
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8 }}
+                className="mt-10 bg-white p-6 rounded-xl shadow-md"
+            >
+                <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center">
+                        <FaKeyboard className="text-indigo-600 text-4xl mr-3" />
+                        <h3 className="text-2xl font-bold text-indigo-700">
+                            ⌨️ Dicas e Atalhos Úteis do PowerPoint
+                        </h3>
+                    </div>
+
+                    {/* Botão de impressão */}
+                    <button
+                        onClick={() => {
+                            const content = document.getElementById("atalhos-section");
+                            if (!content) return;
+                            const printWindow = window.open("", "", "width=800,height=600");
+                            printWindow?.document.write(`
+                                <html>
+                                    <head>
+                                        <title>Atalhos do PowerPoint</title>
+                                        <style>
+                                            body { font-family: Arial; padding: 20px; }
+                                            h3 { color: #4f46e5; text-align: center; }
+                                            ul { line-height: 1.8; font-size: 14px; }
+                                            li { margin-bottom: 6px; }
+                                            strong { color: #4338ca; }
+                                        </style>
+                                    </head>
+                                    <body>
+                                        <h3>⌨️ Dicas e Atalhos Úteis do PowerPoint</h3>
+                                        ${content.innerHTML}
+                                        <p>💡Explore os atalhos — eles tornam o trabalho mais rápido, eficiente e divertido!</p>
+                                    </body>
+                                </html>
+                            `);
+                            printWindow?.document.close();
+                            printWindow?.print();
+                        }}
+                        className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg shadow-md transition print:hidden cursor-pointer"
+                    >
+                        🖨️ Imprimir Atalhos
+                    </button>
+                </div>
+
+                {/* Lista de atalhos */}
+                <ul
+                    id="atalhos-section"
+                    className="list-decimal list-inside space-y-2 text-gray-700"
+                >
+                    <li>{`Ctrl + M → Insere um novo slide rapidamente.`}</li>
+                    <li>{`Ctrl + D → Duplica o slide atual.`}</li>
+                    <li>{`Ctrl + Shift + > / Ctrl + Shift + < → Aumenta ou diminui o tamanho da fonte.`}</li>
+                    <li>{`Ctrl + G → Agrupa objetos selecionados.`}</li>
+                    <li>{`Ctrl + Shift + G → Desagrupa objetos.`}</li>
+                    <li>{`F5 → Inicia a apresentação do começo.`}</li>
+                    <li>{`Shift + F5 → Inicia a apresentação do slide atual.`}</li>
+                    <li>{`Esc → Encerra a apresentação de slides.`}</li>
+                    <li>{`Ctrl + K → Insere um link (hiperlink).`}</li>
+                    <li>{`Ctrl + S → Salva a apresentação.`}</li>
+                    <li>{`Ctrl + A → Seleciona todos os elementos do slide.`}</li>
+                    <li>{`Ctrl + C / Ctrl + V → Copia e cola objetos.`}</li>
+                    <li>{`Ctrl + X → Recorta o elemento selecionado.`}</li>
+                    <li>{`Ctrl + Z → Desfaz a última ação.`}</li>
+                    <li>{`Ctrl + Y → Refaz a última ação desfeita.`}</li>
+                    <li>{`Ctrl + T → Seleciona todo o texto no slide.`}</li>
+                    <li>{`Ctrl + Alt + F → Cria nota de rodapé.`}</li>
+                    <li>{`Tab → Aumenta o recuo do parágrafo.`}</li>
+                    <li>{`Shift + Tab → Diminui o recuo do parágrafo.`}</li>
+                    <li>{`Alt + Shift + ↑ / ↓ → Move o slide para cima ou para baixo na ordem.`}</li>
+                    <li>{`Ctrl + P → Abre a janela de impressão.`}</li>
+                    <li>{`Ctrl + Shift + C / Ctrl + Shift + V → Copia e aplica a formatação de objetos.`}</li>
+                    <li>{`Ctrl + L / E / R / J → Alinha o texto à esquerda, centro, direita ou justificado.`}</li>
+                    <li>{`Ctrl + Shift + H / U → Aplica ocultar texto / sublinhado.`}</li>
+                    <li>{`Ctrl + Alt + Shift + G → Agrupa gráficos e objetos complexos.`}</li>
+                    <li>{`Alt + N, P → Inserir imagem do computador.`}</li>
+                    <li>{`Alt + N, X → Inserir gráfico.`}</li>
+                    <li>{`Alt + H, S, C → Aplicar estilos rápidos ao texto.`}</li>
+                </ul>
+
+                <p className="mt-4 text-indigo-700 font-semibold">
+                    💡 Dica: explore os atalhos — eles tornam o trabalho mais rápido, eficiente e divertido!
+                </p>
+            </motion.div>
+
+            {/* Estilo global para impressão */}
+            <style jsx global>{`
+                @media print {
+                    body * {
+                        visibility: hidden;
+                    }
+                    #atalhos-section, #atalhos-section * {
+                        visibility: visible;
+                    }
+                    #atalhos-section {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                    }
+                    .print\\:hidden {
+                        display: none !important;
+                    }
+                }
+            `}</style>
         </main>
     );
 }
