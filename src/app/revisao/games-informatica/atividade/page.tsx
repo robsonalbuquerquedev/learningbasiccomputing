@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaGamepad, FaSmile, FaTrophy } from "react-icons/fa";
+import { FaGamepad, FaTrophy } from "react-icons/fa";
 
 export default function GamesInformaticaQuiz() {
     const questions = [

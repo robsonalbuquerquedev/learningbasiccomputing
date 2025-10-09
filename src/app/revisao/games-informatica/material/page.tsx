@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import {
     FaGamepad,
     FaPuzzlePiece,
-    FaKeyboard,
     FaRocket,
     FaGlobe,
     FaFlag,

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaFileWord, FaStar, FaBookOpen, FaListOl, FaTable, FaImage, FaCog } from "react-icons/fa";
+import { FaFileWord } from "react-icons/fa";
 
 export default function WordAtividade() {
     const atividades = [

@@ -6,7 +6,6 @@ import {
     FaCloud,
     FaUsers,
     FaMagic,
-    FaKeyboard,
 } from "react-icons/fa";
 import Link from "next/link";
 
@@ -131,116 +130,6 @@ export default function PowerPointMaterial() {
                     tudo no seu estilo. 😉
                 </p>
             </motion.div>
-
-            {/* Dicas e atalhos úteis */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8 }}
-                className="mt-10 bg-white p-6 rounded-xl shadow-md"
-            >
-                <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center">
-                        <FaKeyboard className="text-indigo-600 text-4xl mr-3" />
-                        <h3 className="text-2xl font-bold text-indigo-700">
-                            ⌨️ Dicas e Atalhos Úteis do PowerPoint
-                        </h3>
-                    </div>
-
-                    {/* Botão de impressão */}
-                    <button
-                        onClick={() => {
-                            const content = document.getElementById("atalhos-section");
-                            if (!content) return;
-                            const printWindow = window.open("", "", "width=800,height=600");
-                            printWindow?.document.write(`
-                                <html>
-                                    <head>
-                                        <title>Atalhos do PowerPoint</title>
-                                        <style>
-                                            body { font-family: Arial; padding: 20px; }
-                                            h3 { color: #4f46e5; text-align: center; }
-                                            ul { line-height: 1.8; font-size: 14px; }
-                                            li { margin-bottom: 6px; }
-                                            strong { color: #4338ca; }
-                                        </style>
-                                    </head>
-                                    <body>
-                                        <h3>⌨️ Dicas e Atalhos Úteis do PowerPoint</h3>
-                                        ${content.innerHTML}
-                                        <p>💡 Dica: explore os atalhos — eles tornam o trabalho muito mais rápido e divertido!</p>
-                                    </body>
-                                </html>
-                            `);
-                            printWindow?.document.close();
-                            printWindow?.print();
-                        }}
-                        className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg shadow-md transition print:hidden cursor-pointer"
-                    >
-                        🖨️ Imprimir Atalhos
-                    </button>
-                </div>
-
-                {/* Lista de atalhos */}
-                <ul
-                    id="atalhos-section"
-                    className="list-decimal list-inside space-y-2 text-gray-700"
-                >
-                    <li><strong>Ctrl + M</strong> → Insere um novo slide rapidamente.</li>
-                    <li><strong>Ctrl + D</strong> → Duplica o slide atual.</li>
-                    <li><strong>Ctrl + Shift + &gt;</strong> / <strong>Ctrl + Shift + &lt;</strong> → Aumenta ou diminui o tamanho da fonte.</li>
-                    <li><strong>Ctrl + G</strong> → Agrupa objetos selecionados.</li>
-                    <li><strong>Ctrl + Shift + G</strong> → Desagrupa objetos.</li>
-                    <li><strong>F5</strong> → Inicia a apresentação do começo.</li>
-                    <li><strong>Shift + F5</strong> → Inicia a apresentação do slide atual.</li>
-                    <li><strong>Esc</strong> → Encerra a apresentação de slides.</li>
-                    <li><strong>Ctrl + K</strong> → Insere um link (hiperlink).</li>
-                    <li><strong>Ctrl + S</strong> → Salva a apresentação.</li>
-                    <li><strong>Ctrl + A</strong> → Seleciona todos os elementos do slide.</li>
-                    <li><strong>Ctrl + C</strong> / <strong>Ctrl + V</strong> → Copia e cola objetos.</li>
-                    <li><strong>Ctrl + X</strong> → Recorta o elemento selecionado.</li>
-                    <li><strong>Ctrl + Z</strong> → Desfaz a última ação.</li>
-                    <li><strong>Ctrl + Y</strong> → Refaz a última ação desfeita.</li>
-                    <li><strong>Ctrl + T</strong> → Seleciona todo o texto no slide.</li>
-                    <li><strong>Ctrl + Alt + F</strong> → Cria nota de rodapé.</li>
-                    <li><strong>Tab</strong> → Aumenta o recuo do parágrafo.</li>
-                    <li><strong>Shift + Tab</strong> → Diminui o recuo do parágrafo.</li>
-                    <li><strong>Alt + Shift + ↑ / ↓</strong> → Move o slide para cima ou para baixo na ordem.</li>
-                    <li><strong>Ctrl + P</strong> → Abre a janela de impressão.</li>
-                    <li><strong>Ctrl + Shift + C / Ctrl + Shift + V</strong> → Copia e aplica a formatação de objetos.</li>
-                    <li><strong>Ctrl + L / E / R / J</strong> → Alinha o texto à esquerda, centro, direita ou justificado.</li>
-                    <li><strong>Ctrl + Shift + H / U</strong> → Aplica ocultar texto / sublinhado.</li>
-                    <li><strong>Ctrl + Alt + Shift + G</strong> → Agrupa gráficos e objetos complexos.</li>
-                    <li><strong>Alt + N, P</strong> → Inserir imagem do computador.</li>
-                    <li><strong>Alt + N, X</strong> → Inserir gráfico.</li>
-                    <li><strong>Alt + H, S, C</strong> → Aplicar estilos rápidos ao texto.</li>
-                </ul>
-
-                <p className="mt-4 text-indigo-700 font-semibold">
-                    💡 Dica: explore os atalhos — eles tornam o trabalho mais rápido, eficiente e divertido!
-                </p>
-            </motion.div>
-
-            {/* Estilo global para impressão */}
-            <style jsx global>{`
-                @media print {
-                    body * {
-                        visibility: hidden;
-                    }
-                    #atalhos-section, #atalhos-section * {
-                        visibility: visible;
-                    }
-                    #atalhos-section {
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        width: 100%;
-                    }
-                    .print\\:hidden {
-                        display: none !important;
-                    }
-                }
-            `}</style>
         </main>
     );
 }
