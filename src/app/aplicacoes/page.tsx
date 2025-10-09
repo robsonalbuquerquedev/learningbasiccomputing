@@ -180,19 +180,25 @@ export default function Aplicacoes() {
                 </motion.div>
 
                 {/* Apresentações */}
-                <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    className="p-4 bg-white rounded-xl shadow-md flex items-center gap-4"
+                <Link
+                    href="/revisao/powerpoint/material"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    <FaRegImages className="text-orange-500 text-4xl" />
-                    <div>
-                        <h2 className="font-semibold text-lg">Apresentações</h2>
-                        <p className="text-gray-600 text-sm">
-                            Criar slides para apresentar ideias e trabalhos.
-                            Exemplos: PowerPoint, Google Slides.
-                        </p>
-                    </div>
-                </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        className="p-4 bg-white rounded-xl shadow-md flex items-center gap-4 cursor-pointer"
+                    >
+                        <FaRegImages className="text-orange-500 text-4xl" />
+                        <div>
+                            <h2 className="font-semibold text-lg">Apresentações</h2>
+                            <p className="text-gray-600 text-sm">
+                                Criar slides para apresentar ideias e trabalhos.
+                                Exemplos: PowerPoint, Google Slides.
+                            </p>
+                        </div>
+                    </motion.div>
+                </Link>
 
                 {/* Jogos Educativos */}
                 <Link
@@ -213,7 +219,7 @@ export default function Aplicacoes() {
                         </div>
                     </motion.div>
                 </Link>
-                
+
                 {/* E-mail */}
                 <motion.div
                     whileHover={{ scale: 1.05 }}
