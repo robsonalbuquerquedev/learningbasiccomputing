@@ -19,13 +19,14 @@ export default function RelatorioHorasAulas() {
             ],
             total: "8 horas",
         },
-        // Depois você pode adicionar novos relatórios aqui:
-        // {
-        //   titulo: "2º Relatório de Horas/Aulas",
-        //   periodo: "11/10 a 20/10",
-        //   aulas: [ ... ],
-        //   total: "xx horas",
-        // },
+        {
+            titulo: "2º Relatório de Horas/Aulas",
+            periodo: "14/10 a 07/11",
+            aulas: [
+                "14/10 = 2 horas - Atividades Práticas no Word",
+            ],
+            total: "2 horas",
+        },
     ];
 
     const handlePrint = (index: number) => {
