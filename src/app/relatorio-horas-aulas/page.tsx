@@ -32,7 +32,7 @@ export default function RelatorioHorasAulas() {
                 "04/11 = 2 horas - Conhecendo a linguagem da Web (HTML)",
                 "07/11 = 2 horas - Alunos ausentes",
             ],
-            total: "2 horas",
+            total: "16 horas",
         },
     ];
 
