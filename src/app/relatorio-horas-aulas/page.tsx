@@ -24,6 +24,13 @@ export default function RelatorioHorasAulas() {
             periodo: "14/10 a 07/11",
             aulas: [
                 "14/10 = 2 horas - Atividades Práticas no Word",
+                "17/10 = 2 horas - Games informática",
+                "21/10 = 2 horas - Alunos ausentes",
+                "24/10 = 2 horas - Plantão Pedagógico",
+                "28/10 = 2 horas - Atividades Práticas no PowerPoint",
+                "31/10 = 2 horas - Alunos ausentes",
+                "04/11 = 2 horas - Conhecendo a linguagem da Web (HTML)",
+                "07/11 = 2 horas - Alunos ausentes",
             ],
             total: "2 horas",
         },
